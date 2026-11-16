@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профессиональная полировка кузова, керамическое покрытие, тонировка и детальная химчистка салона автомобиля в Detail Studio.">
+  <title>Detail Studio — студия детейлинга и полировки автомобилей</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">◆</span>DETAIL<span>STUDIO</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="services.html">Услуги и калькулятор</a>
+      <a href="#standards">Технологии</a>
+      <a href="#gallery">Работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#booking">Запись</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+      <a href="#booking" class="btn btn--small header__cta">Записаться</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="eyebrow-badge">
+          <span class="pulse-dot"></span> Студия бережного детейлинга и ухода за авто
+        </div>
+        <h1>Верните автомобилю <span class="accent">глубокий зеркальный блеск</span> и чистоту нового салона</h1>
+        <p class="hero__text">
+          Восстанавливаем лакокрасочное покрытие без риска для лака, наносим керамическую защиту, делаем глубокую химчистку салона и аккуратную тонировку. Замеряем толщину ЛКП и фиксируем точную смету до начала работ.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#booking" class="btn btn--glow">Записаться на бесплатный осмотр</a>
+          <a href="services.html#calculator" class="btn btn--ghost">Рассчитать стоимость онлайн</a>
+        </div>
+
+        <ul class="stats">
+          <li>
+            <strong data-count="650" data-suffix="+">650+</strong>
+            <span>готовых автомобилей</span>
+          </li>
+          <li>
+            <strong data-count="98" data-suffix="%">98%</strong>
+            <span>устранения мелких рисок</span>
+          </li>
+          <li>
+            <strong data-count="12" data-suffix=" мес">12 мес</strong>
+            <span>гарантии на покрытия</span>
+          </li>
+          <li>
+            <strong data-count="100" data-suffix="%">100%</strong>
+            <span>контроль толщиномером</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Визуальная карточка в правом столбце Hero -->
+      <div class="hero__visual reveal">
+        <div class="showcase-card">
+          <div class="showcase-card__header">
+            <span class="showcase-card__tag">Диагностическая карта ЛКП</span>
+            <span class="showcase-card__status">Контроль спектра 6000K</span>
+          </div>
+
+          <div class="showcase-car-graphic">
+            <svg viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="car-silhouette">
+              <defs>
+                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#ffbd39" stop-opacity="0.2"/>
+                  <stop offset="50%" stop-color="#ffbd39" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#ff8800" stop-opacity="0.3"/>
+                </linearGradient>
+                <linearGradient id="bodyFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#ffbd39" stop-opacity="0.16"/>
+                  <stop offset="100%" stop-color="#18191c" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <!-- Силуэт кузова -->
+              <path d="M35 125 L55 92 L125 60 L250 56 L325 88 L368 102 L375 128 L340 132 M65 132 L35 125" fill="url(#bodyFill)"/>
+              <path d="M32 126 C40 102, 55 90, 72 86 L132 56 C150 48, 225 48, 255 58 L315 86 C340 90, 365 98, 374 118 L372 132 L338 132 M115 132 L272 132 M62 132 L34 132 Z" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Линия остекления -->
+              <path d="M136 62 L245 62 L296 86 L100 86 Z" stroke="rgba(255,189,57,0.45)" stroke-width="1.8" fill="rgba(255,189,57,0.06)"/>
+              <!-- Колеса -->
+              <circle cx="88" cy="132" r="24" stroke="#ffbd39" stroke-width="2.5" fill="#18191c"/>
+              <circle cx="88" cy="132" r="11" stroke="rgba(255,189,57,0.5)" stroke-width="1.5"/>
+              <circle cx="305" cy="132" r="24" stroke="#ffbd39" stroke-width="2.5" fill="#18191c"/>
+              <circle cx="305" cy="132" r="11" stroke="rgba(255,189,57,0.5)" stroke-width="1.5"/>
+              <!-- Точки контроля -->
+              <circle cx="80" cy="95" r="5" fill="#ffbd39"/>
+              <circle cx="195" cy="58" r="5" fill="#ffbd39"/>
+              <circle cx="230" cy="98" r="5" fill="#ffbd39"/>
+              <circle cx="335" cy="100" r="5" fill="#ffbd39"/>
+            </svg>
+          </div>
+
+          <div class="showcase-metrics">
+            <div class="metric-box">
+              <span class="metric-box__label">Глубина блеска (Gloss)</span>
+              <div class="metric-box__bar"><span style="width: 96%"></span></div>
+              <strong class="metric-box__val">96 GU — Зеркало</strong>
+            </div>
+            <div class="metric-box">
+              <span class="metric-box__label">Гидрофобный угол капли</span>
+              <div class="metric-box__bar"><span style="width: 92%"></span></div>
+              <strong class="metric-box__val">115° — Керамика 9H</strong>
+            </div>
+          </div>
+
+          <ul class="showcase-checklist">
+            <li><span>✦</span> Безопасный съем лака (сохраняем заводской слой)</li>
+            <li><span>✦</span> Детейлинг труднодоступных зон, стыков и эмблем</li>
+            <li><span>✦</span> Фото- и видеоотчет каждого этапа в мессенджер</li>
+          </ul>
+
+          <div class="showcase-card__footer">
+            <div>
+              <span class="muted-small">Бесплатная диагностика ЛКП</span>
+              <strong>15–20 минут при вас</strong>
+            </div>
+            <a href="#booking" class="btn btn--small">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОЧЕМУ ВЫБИРАЮТ НАС + СТАНДАРТЫ СТУДИИ -->
+  <section class="section" id="standards">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Инженерный подход</p>
+        <h2>Почему нам доверяют свои автомобили</h2>
+        <p>Никаких «потоковых» моек и агрессивных паст. Работаем по технологическим картам с бережным отношением к каждой детали.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <span class="card__num">01</span>
+          </div>
+          <h3>Замер ЛКП толщиномером</h3>
+          <p>Перед полировкой промеряем каждый элемент кузова. Точно знаем, где заводской окрас, а где тонкий лак, чтобы исключить риск прожога.</p>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+              </svg>
+            </div>
+            <span class="card__num">02</span>
+          </div>
+          <h3>Профессиональный свет</h3>
+          <p>Используем направленный студийный свет разной цветовой температуры (3000K–6000K). Видим и убираем мельчайшую «паутинку» и голограммы.</p>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5 2.5-2.5z"/>
+              </svg>
+            </div>
+            <span class="card__num">03</span>
+          </div>
+          <h3>Премиальная химия и круги</h3>
+          <p>Работаем эксцентриковыми машинками и проверенными составами (Koch Chemie, Menzerna, Gyeon). Никаких силиконовых «затирок», смывающихся через неделю.</p>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M7 8h10M7 12h6M7 16h4"/>
+              </svg>
+            </div>
+            <span class="card__num">04</span>
+          </div>
+          <h3>Фиксированная смета до старта</h3>
+          <p>Осматриваем автомобиль вместе с вами, согласуем перечень работ и точную цену. Никаких внезапных доплат при выдаче машины.</p>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <span class="card__num">05</span>
+          </div>
+          <h3>Гипоаллергенная химчистка</h3>
+          <p>Подбираем pH-нейтральные составы под кожу, алькантару, текстиль и пластик. Бережная сушка салона без сырости, разводов и резких запахов.</p>
+        </article>
+
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 7v5l3 2"/>
+              </svg>
+            </div>
+            <span class="card__num">06</span>
+          </div>
+          <h3>Сдача точно в срок</h3>
+          <p>Ценим ваше время: заранее бронируем бокс конкретно под ваш автомобиль и соблюдаем технологическое время выдержки защитных составов.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- НАПРАВЛЕНИЯ УСЛУГ НА ГЛАВНОЙ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Каталог решений</p>
+        <h2>Уход за автомобилем под вашу задачу</h2>
+        <p>Выберите отдельную процедуру или соберите выгодный комплекс ухода за кузовом и салоном.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="service-preview-card reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag">Кузов и блеск</span>
+            <span class="service-time">⏱ 1 день</span>
+          </div>
+          <h3>Восстановительная полировка</h3>
+          <p>Убираем до 95–98% мелких царапин, «паутинки» от моек, следов веток и помутнений. Возвращаем заводскую глубину и сочность цвета.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 8 000 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+
+        <article class="service-preview-card service-preview-card--highlight reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag service-tag--accent">Хит сезона</span>
+            <span class="service-time">⏱ 1–2 дня</span>
+          </div>
+          <h3>Полировка + Керамика 9H</h3>
+          <p>Идеальная подготовка кузова с последующим нанесением керамического щита. Мощный гидрофоб, эффект «леденца» и защита от реагентов и УФ-лучей.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 15 000 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+
+        <article class="service-preview-card reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag">Интерьер</span>
+            <span class="service-time">⏱ 6–10 часов</span>
+          </div>
+          <h3>Детальная химчистка салона</h3>
+          <p>Глубокая очистка сидений, ковролина, потолка, ремней и воздуховодов торнадором и экстрактором. Кондиционер кожи и матовая консервация пластика.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 5 000 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+
+        <article class="service-preview-card reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag">Комфорт и стиль</span>
+            <span class="service-time">⏱ 2–4 часа</span>
+          </div>
+          <h3>Тонировка стёкол</h3>
+          <p>Установка качественных атермальных и затемняющих плёнок без заломов, пыли и разбора карт дверей. Защита салона от выгорания и перегрева.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 3 500 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+
+        <article class="service-preview-card reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag">Быстрое обновление</span>
+            <span class="service-time">⏱ 4–6 часов</span>
+          </div>
+          <h3>Лёгкая полировка + Твёрдый воск</h3>
+          <p>Отличный вариант для свежих авто или предпродажной подготовки. Удаление оксидного налёта, возвращение глянца и защита карнаубским воском.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 5 000 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+
+        <article class="service-preview-card reveal">
+          <div class="service-preview-card__top">
+            <span class="service-tag">Безопасность</span>
+            <span class="service-time">⏱ 1–2 часа</span>
+          </div>
+          <h3>Полировка фар и «Антидождь»</h3>
+          <p>Восстановление прозрачности помутневшей оптики и нанесение гидрофобного состава на полусферу стёкол. Идеальная видимость в ливень и ночью.</p>
+          <div class="service-preview-card__bottom">
+            <strong class="service-price">от 1 500 ₽</strong>
+            <a href="services.html#prices" class="link-arrow">Подробнее →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-banner reveal">
+        <div class="cta-banner__text">
+          <h3>Хотите узнать точную стоимость под ваш автомобиль?</h3>
+          <p>Воспользуйтесь онлайн-калькулятором на странице услуг — выберите класс авто и нужные работы за 30 секунд.</p>
+        </div>
+        <a href="services.html#calculator" class="btn btn--glow">Открыть калькулятор цен</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭТАПЫ РАБОТЫ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Прозрачный процесс</p>
+        <h2>Как проходит работа над автомобилем</h2>
+        <p>Четыре понятных шага от обращения до выдачи сияющего автомобиля.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num">1</span>
+          <h3>Заявка и запись</h3>
+          <p>Оставляете контакты на сайте. Согласуем удобное время приезда без очередей.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">2</span>
+          <h3>Осмотр и диагностика</h3>
+          <p>Моем или осматриваем авто при студийном свете, проверяем ЛКП толщиномером и обсуждаем задачи.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">3</span>
+          <h3>Бережное выполнение</h3>
+          <p>Фиксируем цену, оклеиваем неокрашенный пластик и резинки, выполняем полировку, защиту или химчистку.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">4</span>
+          <h3>Приёмка и рекомендации</h3>
+          <p>Вместе проверяем результат при ярком освещении и даём памятку по правильному уходу за покрытиями.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ГАЛЕРЕЯ ДО / ПОСЛЕ -->
+  <section class="section section--alt" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Наглядный результат</p>
+        <h2>Примеры наших работ «До и После»</h2>
+        <p>Реальные преображения кузова и салона после студийной обработки.</p>
+      </div>
+
+      <!-- Примечание: пути images/car-1-before.jpg и др. сохранены. Если фото еще не загружены в папку images/, сработает встроенный стильный векторный фон -->
+      <div class="gallery-grid">
+        <article class="gallery-card reveal">
+          <div class="gallery-card__images">
+            <figure class="gallery-figure gallery-figure--before">
+              <img src="images/car-1-before.jpg" alt="Автомобиль до полировки" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual">
+                <span>Матовый лак и паутинка</span>
+              </div>
+              <figcaption>До</figcaption>
+            </figure>
+            <figure class="gallery-figure gallery-figure--after">
+              <img src="images/car-1-after.jpg" alt="Автомобиль после полировки" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual fallback-visual--after">
+                <span>Глубокий зеркальный глянец</span>
+              </div>
+              <figcaption>После</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-card__caption">
+            <div class="gallery-card__meta">
+              <span class="badge-mini">Кузов</span>
+              <span>Время работы: 14 часов</span>
+            </div>
+            <h3>Восстановительная полировка кузова</h3>
+            <p>Убрали плотную сетку мелких царапин от щеток и дорожного пескоструя, вернули глубокий темный оттенок и чистый блик.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal">
+          <div class="gallery-card__images">
+            <figure class="gallery-figure gallery-figure--before">
+              <img src="images/car-2-before.jpg" alt="Автомобиль до нанесения защитного покрытия" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual">
+                <span>Тусклый цвет и водный камень</span>
+              </div>
+              <figcaption>До</figcaption>
+            </figure>
+            <figure class="gallery-figure gallery-figure--after">
+              <img src="images/car-2-after.jpg" alt="Автомобиль после нанесения защитного покрытия" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual fallback-visual--after">
+                <span>Керамика 9H + Гидрофоб</span>
+              </div>
+              <figcaption>После</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-card__caption">
+            <div class="gallery-card__meta">
+              <span class="badge-mini">Полировка + Керамика</span>
+              <span>Время работы: 2 дня</span>
+            </div>
+            <h3>Мягкая полировка и керамика в 2 слоя</h3>
+            <p>Выполнили глубокую деконтаминацию кузова, располировали лак в зеркало и закрыли двухслойным керамическим составом.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal">
+          <div class="gallery-card__images">
+            <figure class="gallery-figure gallery-figure--before">
+              <img src="images/car-3-before.jpg" alt="Салон автомобиля до химчистки" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual">
+                <span>Засаленная кожа и пятна</span>
+              </div>
+              <figcaption>До</figcaption>
+            </figure>
+            <figure class="gallery-figure gallery-figure--after">
+              <img src="images/car-3-after.jpg" alt="Салон автомобиля после химчистки" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+              <div class="fallback-visual fallback-visual--after">
+                <span>Матовая чистая фактура</span>
+              </div>
+              <figcaption>После</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-card__caption">
+            <div class="gallery-card__meta">
+              <span class="badge-mini">Интерьер</span>
+              <span>Время работы: 8 часов</span>
+            </div>
+            <h3>Комплексная химчистка и уход за кожей</h3>
+            <p>Деликатно очистили светлую кожу и ковролин, убрали жирный блеск с руля и сидений, пропитали кожу защитным кремом.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- СРОКИ И ПОДГОТОВКА -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Планирование времени</p>
+        <h2>Сколько времени занимает работа</h2>
+        <p>Ориентировочные тайминги для планирования вашего графика. Точное время согласуем при осмотре.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <span class="time-estimate">⏱ 1 рабочий день (8–12 ч)</span>
+          <h3>Полировка кузова</h3>
+          <p>Включает двухфазную мойку, очистку кузова синтетической глиной от битума и металлических вкраплений, оклейку пластика и 2–3 этапа полировки.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="time-estimate">⏱ 1.5–2 дня (с полимеризацией)</span>
+          <h3>Полировка + Керамическое покрытие</h3>
+          <p>После полировки и обезжиривания кузова наносится керамический состав, которому требуется выдержка в сухом теплом боксе для кристаллизации.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="time-estimate">⏱ от 4 до 10 часов</span>
+          <h3>Химчистка салона или тонировка</h3>
+          <p>Тонировка задней полусферы занимает 2–3 часа. Полная химчистка с бережной сушкой салона занимает день — утром оставили, вечером забрали сухое авто.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ КЛИЕНТОВ -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Репутация</p>
+        <h2>Отзывы владельцев автомобилей</h2>
+        <p>Средняя оценка студии <strong>4.9 из 5</strong> по отзывам постоянных клиентов.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card review-card reveal">
+          <div class="review-card__top">
+            <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
+            <span class="review-card__car">Kia Ceed JD • Чёрный металлик</span>
+          </div>
+          <p class="review-card__text">«Чёрный цвет после зимних моек весь покрылся паутинкой, на солнце смотреть было больно. Ребята замерили лак толщиномером, сделали восстановительную полировку и закрыли керамикой. Машина просто горит, вода слетает каплями!»</p>
+          <div class="review-card__author">
+            <div class="avatar">АК</div>
+            <div>
+              <h3>Александр К.</h3>
+              <span>Полировка + Керамика 9H</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card review-card reveal">
+          <div class="review-card__top">
+            <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
+            <span class="review-card__car">Toyota Camry XV70</span>
+          </div>
+          <p class="review-card__text">«Отдавал машину на полную химчистку салона и полировку фар после покупки на вторичке. В салоне теперь запах новой машины, сиденья матовые, все щели и дефлекторы вычищены в идеал. По цене — копейка в копейку как договорились».</p>
+          <div class="review-card__author">
+            <div class="avatar">ДВ</div>
+            <div>
+              <h3>Дмитрий В.</h3>
+              <span>Полная химчистка салона</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card review-card reveal">
+          <div class="review-card__top">
+            <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
+            <span class="review-card__car">BMW X3 G01</span>
+          </div>
+          <p class="review-card__text">«Понравился подход: никто не навязывает лишнего. На осмотре под лампами показали, какие царапины уйдут в ноль, а какие лучше не перегревать. Сделали легкую полировку с твердым воском и антидождь на лобовое. Рекомендую!»</p>
+          <div class="review-card__author">
+            <div class="avatar">МC</div>
+            <div>
+              <h3>Максим С.</h3>
+              <span>Лёгкая полировка + Антидождь</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАПИСЬ И ФОРМА -->
+  <section class="section" id="booking">
+    <div class="container booking">
+      <div class="booking__info reveal">
+        <p class="eyebrow">Онлайн-запись</p>
+        <h2>Запишитесь на удобное время или бесплатный осмотр</h2>
+        <p>Оставьте контакты и марку автомобиля — мы перезвоним или напишем в мессенджер, сориентируем по цене и подберём свободное окно.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__label">Телефон и мессенджеры</span>
+            <strong><a href="tel:+79000000000">+7 (900) 000-00-00</a></strong>
+          </li>
+          <li>
+            <span class="contact-list__label">Адрес студии</span>
+            <strong>Удобный заезд, чистый светлый бокс с охраной</strong>
+          </li>
+          <li>
+            <span class="contact-list__label">График работы</span>
+            <strong>Ежедневно с 10:00 до 20:00 (по предварительной записи)</strong>
+          </li>
+        </ul>
+
+        <div class="booking__perks">
+          <div class="perk-pill">✓ Бесплатный замер ЛКП</div>
+          <div class="perk-pill">✓ Оплата после приёмки результата</div>
+          <div class="perk-pill">✓ Гарантия безопасности</div>
+        </div>
+      </div>
+
+      <form class="form reveal" id="booking-form" novalidate>
+        <div class="form__header field--full">
+          <h3>Заявка на расчёт или запись</h3>
+          <p>Заполните поля ниже — это ни к чему не обязывает.</p>
+        </div>
+
+        <div class="field">
+          <label for="name">Ваше имя *</label>
+          <input type="text" id="name" name="name" placeholder="Как к вам обращаться">
+        </div>
+
+        <div class="field">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (900) 000-00-00">
+        </div>
+
+        <div class="field">
+          <label for="car">Марка и модель авто *</label>
+          <input type="text" id="car" name="car" placeholder="Например: Kia Ceed, BMW X5">
+        </div>
+
+        <div class="field">
+          <label for="service">Интересующая услуга *</label>
+          <select id="service" name="service">
+            <option value="">Выберите услугу</option>
+            <option value="polishing">Восстановительная / легкая полировка</option>
+            <option value="ceramic">Полировка + Керамическое покрытие</option>
+            <option value="interior">Детальная химчистка салона</option>
+            <option value="tinting">Тонировка стёкол / Антидождь</option>
+            <option value="scratches">Локальное удаление царапин и притёртостей</option>
+            <option value="complex">Комплексный уход (с расчётом из калькулятора)</option>
+          </select>
+        </div>
+
+        <div class="field field--full">
+          <label for="date">Желаемая дата визита (необязательно)</label>
+          <input type="date" id="date" name="date">
+        </div>
+
+        <div class="field field--full">
+          <label for="message">Комментарий или расчёт калькулятора</label>
+          <textarea id="message" name="message" rows="3" placeholder="Опишите состояние авто или пожелания..."></textarea>
+        </div>
+
+        <div class="field--full">
+          <button type="submit" class="btn btn--glow btn--block">Отправить заявку</button>
+          <p class="form__privacy">Нажимая кнопку, вы соглашаетесь на обработку контактных данных для обратной связи.</p>
+          <div class="form__success" id="form-success" hidden>
+            <strong>✓ Заявка успешно принята!</strong> Мы свяжемся с вами в ближайшее время для подтверждения деталей.
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">DETAIL
